@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="uk">
+	<head>
+		<title>Галерея</title>
+	</head>
+	<style>
+		.zoom {
+			margin: auto;
+			overflow:hidden;
+			width: 350px;
+			height:350px;
+		}
+		
+		.zoom img {
+			-moz-transition: all 1s ease-out;
+			-o-transition: all 1s ease-out;
+			-webkit-transition: all 1s ease-out;
+		}
+		
+		.zoom img:hover{
+			-webkit-transform: scale(2);
+			-moz-transform: scale(2);
+			-o-transform: scale(2);
+		}
+		  
+	</style>
+	<body>
+		<div class="zoom"><a href="#" id="image1"><img width="350" height="350" src="img/gallery/image1upd.jpg" /></a></div>
+		<div class="zoom"><a href="#" id="image2"><img width="350" height="350" src="img/gallery/image2upd.jpg" /></a></div>
+		<div class="zoom"><a href="#" id="image3"><img width="350" height="350" src="img/gallery/image3upd.jpg" /></a></div>
+		<div class="zoom"><a href="#" id="image4"><img width="350" height="350" src="img/gallery/image4upd.jpg" /></a></div>
+	</body>
+</html>
