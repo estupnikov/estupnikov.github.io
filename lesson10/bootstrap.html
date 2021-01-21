@@ -4,7 +4,61 @@
 		<meta charset="UTF-8">
 		<title>Знакомство с Bootstrap</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="bootstrap.css">
+		<link rel="stylesheet" href="style.css">
 	</head>
-	<body>					
+	<body>
+		<div class="container-fluid bg-danger">
+			<h1>Hello Bootstrap!</h1>
+		</div> 
+		<div class="container bg-info">
+			<div class="row">
+				<div class="col-sm-4">Первая строка</div>
+				<div class="col-sm-4">Вторая строчка</div>
+				<div class="col-sm-4">Третья строчка</div>
+			</div>
+
+			<div class="row">
+				<div class="col-sm-4 border-1 border-primary bg-success m-auto">
+					<h1>Узкая колонка</h1>
+					<p>Тестовая узкая колонка</p>
+				</div>
+				<div class="col-sm-6 border-2 border-secondary bg-warning m-auto">
+					<h1>Широкая колонка</h1>
+					<p>Тестовая широкая колонка</p>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-sm-12 col-md-8 col-lg-4 bg-danger">col-sm-12 col-md-8 col-lg-6</div>
+			</div>
+
+			<div class="row">
+				<div class="col-sm-12 col-md-4 col-lg-8 bg-warning">col-sm-12 col-md-4 col-lg-8</div>
+			</div>
+
+			<div class="row">
+				<div class="col-sm-6">
+				<div class="card">
+					<img src="img/image1.jpg" class="card-img-top" alt="First cat">  
+					<div class="card-body">
+					<h5 class="card-title">Special title treatment</h5>
+					<p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+					<a href="#" class="btn btn-success">Go somewhere</a>
+					</div>
+				</div>
+				</div>
+				<div class="col-sm-6">
+				<div class="card">
+					<img src="img/image2.jpg" class="card-img-top" alt="Second cat">  
+					<div class="card-body">
+					<h5 class="card-title">Special title treatment</h5>
+					<p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+					<a href="#" class="btn btn-danger">Go somewhere</a>
+					</div>
+				</div>
+				</div>
+			</div>
+		</div>						
 	</body>
 </html>
