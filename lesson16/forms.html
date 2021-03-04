@@ -6,15 +6,17 @@
 	</head>
 	<body>
 		<!-- <form action=”..” method=”get/post”></form>	-->
-		<form>
+		<!-- test.php?name=Вася&like=cats&likeHamster=yes&education=none&agree=1 -->
+		<form action="test.php" method="get">
 			<div>
 				<label for="name">Имя</label><br />
-				<input type="text" name="name" id="name" placeholder="Введите ваше имя">
+				<input type="text" name="name" id="name" placeholder="Введите ваше имя" required>
 			</div>
 			<div>
 				Вам больше нравятся<br />
-				<input type="radio" name="like" id="likeCats" value="cats"><label for="likeCats">Кошки</label>
-				<input type="radio" name="like" id="likeDogs" value="dogs"><label for="likeDogs">Собаки</label>
+				<input type="radio" name="like" id="likeCats" value="cats" required><label for="likeCats">Кошки</label>
+				<input type="radio" name="like" id="likeDogs" value="dogs" required><label for="likeDogs">Собаки</label>
+				<input type="radio" name="likeHamster" id="likeHamster" value="yes"><label for="likeHamster">Хомяки</label>
 			</div>
 			<div>
 				<label for="education">Я сейчас</label>
@@ -34,6 +36,7 @@
 				<button type="reset">Очистить форму</button>
 				<button type="submit">Отправить данные</button>
 			</div>
-		</form>	
+		</form>
+		<script src="forms.js"></script>	
 	</body>
 </html>

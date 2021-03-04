@@ -21,8 +21,31 @@ let buttons = document.getElementsByTagName("button");
 for (button of buttons) {
     button.onclick = function(eventObject) {
         eventObject.target.style.backgroundColor = "green";
+        alert("Hello " + eventObject.target.innerText);
     }
     button.onmouseout = function(eventObject) {
         eventObject.target.style.backgroundColor = null;
+    }
+}
+
+// **************
+
+let question = document.querySelector("#question");
+
+question.onclick = function() {
+    let answer = prompt("How many cats on the screen?", "# of cats");
+    if (answer == 4) alert("Correct!")
+    else alert("Count again.");
+}
+
+let add = document.querySelector("#add");
+
+add.onclick = function () {
+    let addCat = confirm("Do you need a new cat?");
+    if (addCat) {
+        let gallery = document.getElementById("additional-cats-gallery");
+        let img = document.createElement("img");
+        img.src= "https://loremflickr.com/350/350/cats?random="+Date.now();
+        gallery.appendChild(img);
     }
 }
