@@ -234,3 +234,8 @@ for (let i = 0; i < phones.length; i++) {
 }
 console.log(result);
 
+//********* */
+
+let str = "Hello";
+str.something = 5;
+alert(str.something); // ?
